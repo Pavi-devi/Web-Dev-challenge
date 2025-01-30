@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek Chat</title>
+    <link rel="stylesheet" href="task1.css"> <!-- External CSS Link -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: white;
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 60px;
+            background-color: #1E1E1E;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .sidebar div {
+            width: 40px;
+            height: 40px;
+            background: gray;
+            border-radius: 50%;
+        }
+
+        /* Main Content */
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4A90E2;
+            margin-bottom: 10px;
+        }
+
+        .chat-box {
+            background-color: #1E1E1E;
+            padding: 15px;
+            border-radius: 10px;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        input {
+            background: none;
+            border: none;
+            color: white;
+            width: 100%;
+            outline: none;
+        }
+
+        .btn {
+            background: #4A90E2;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* File Upload Container */
+        .file-upload-container {
+            margin-top: 20px;
+        }
+
+        /* File Upload Button Styling */
+        #file-upload {
+            display: none; /* Hide the default file input */
+        }
+
+        label[for="file-upload"] {
+            background-color: #4A90E2;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div></div> <!-- Placeholder for sidebar icons -->
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="chat-container">
+        <h1>Hi, I'm DeepSeek.</h1>
+        <p>How can I help you today?</p>
+        
+        <div class="chat-box">
+            <input type="text" placeholder="Message DeepSeek">
+            <button class="btn">Send</button>
+        </div>
+
+        <!-- Upload File Button -->
+        <div class="file-upload-container">
+            <label for="file-upload" class="btn">Upload File</label>
+            <input type="file" id="file-upload" />
+        </div>
+    </div>
+
+</body>
+</html>
